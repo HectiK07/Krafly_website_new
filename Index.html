@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Krafly - Professional IT Services & Technology Solutions">
+    <title>Krafly - A Digital Marketin Agency</title>
+    <link rel="icon" href="logos/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Utility Bar -->
+    <header class="navbar-wrapper" id="navbar-wrapper">
+        <div class="navbar-top" id="navbar-top">
+            <div class="container">
+                <div class="utility-bar">
+                    <span class="utility-text">Connect with Us</span>
+                    <a href="tel:+919137938034" class="utility-link">
+                        <svg class="utility-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="currentColor"/>
+                        </svg>
+                        <span class="utility-phone-text">Call Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <div class="navbar-main" id="navbar-main">
+            <div class="container">
+                <nav class="navbar">
+                    <!-- Left Section: Logo + Carousel -->
+                    <div class="navbar-left">
+                        <div class="navbar-logo">
+                            <img src="logos/Krafly.png" alt="Krafly Logo" class="logo-img" width="120" height="40">
+                        </div>
+                        <div class="navbar-satisfaction">
+                            <span class="satisfaction-text">Over 100+ successful projects delivered with 98% client satisfaction, powered by 25+ software.</span>
+                        </div>
+                        <!-- Logo Carousel: one logo visible, hold then auto-advance -->
+                        <div class="client-carousel" aria-label="Our clients">
+                            <div class="carousel-track carousel-track-single">
+                                <div class="carousel-slide-item"><img src="Client Logos/JP Infra (8).png" alt="JP Infra"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/Shrishti.png" alt="Shrishti Namaah"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/Vihang.png" alt="Vihang Luxuria"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/Shiv Shakti.png" alt="Shiv Shakti Reality"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/Kalpataru (6).png" alt="Kalpataru"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/Sportives.png" alt="Sportives"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/Kanhaji Masale.png" alt="Kanhaji Masala"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/nergy.webp" alt="Nergy Protein"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/Rejoice International School.png" alt="Rejoice International School"></div>
+                                <div class="carousel-slide-item"><img src="Client Logos/MM Mithaiwala.png" alt="MM Mithaiwala"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Section: Nav Links + Toggle -->
+                    <div class="navbar-right">
+                        <button type="button" class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="navbar-menu" id="navbar-menu">
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="#case-study">CASE STUDY</a></li>
+                            <li class="menu-item-services">
+                                <a href="#services">SERVICES <span class="dropdown-icon">▼</span></a>
+                                <ul class="submenu">
+                                    <li><a href="#services"><img src="images/SubMenu (Service 1).png" alt="Paid Media Ads" class="submenu-icon"><span class="submenu-label">Paid Media Ads</span></a></li>
+                                    <li><a href="#services"><img src="images/SubMenu (Service 2).png" alt="Social Media Marketing (SMM)" class="submenu-icon"><span class="submenu-label">Social Media Marketing (SMM)</span></a></li>
+                                    <li><a href="#services"><img src="images/SubMenu (Service 3).png" alt="Website and LP Development" class="submenu-icon"><span class="submenu-label">Website and LP Development</span></a></li>
+                                    <li><a href="#services"><img src="images/SubMenu (Service 4).png" alt="Graphic Designing & Video Editing" class="submenu-icon"><span class="submenu-label">Graphic Designing & Video Editing</span></a></li>
+                                    <li><a href="#services"><img src="images/SubMenu (Service 5).png" alt="UI/UX Designing" class="submenu-icon"><span class="submenu-label">UI/UX Designing</span></a></li>
+                                    <li><a href="#services"><img src="images/SubMenu (Service 6).png" alt="Quality Assurance & Testing" class="submenu-icon"><span class="submenu-label">Quality Assurance & Testing</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left hero-text">
+                    <!-- <span class="hero-intro">Welcome to Krafly Media</span> -->
+                    <h1 class="hero-title stroke">Krafly Media – <span class="hero-highlight">Best Digital Marketing Agency </span> <br>in Mumbai </h1>
+                    <p class="hero-subtext">Growth-driven digital marketing services in Mumbai that boost your brand visibility, skyrocket leads, and maximize ROI..</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-media">
+                        <img src="images/Hero Section.png" alt="Krafly - Digital Marketing Agency" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We provide comprehensive digital marketing solutions in Mumbai designed for modern brands ready to scale.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card premium-glass">
+                    <div class="service-icon">
+                        <img src="images/SubMenu (Service 1).png" alt="Paid Media Ads Icon" class="service-icon-img">
+                    </div>
+                    <h3>Paid Media Ads</h3>
+                    <p>Maximize ROI with targeted Google Ads, Meta/Facebook Ads, Instagram Ads, and PPC campaigns that bring you clicks and conversions fast.</p>
+                </div>
+                <div class="service-card premium-glass">
+                    <div class="service-icon">
+                        <img src="images/SubMenu (Service 2).png" alt="Social Media Marketing Icon" class="service-icon-img">
+                    </div>
+                    <h3>Social Media Marketing (SMM)</h3>
+                    <p>Create engagement and community growth on Instagram, LinkedIn, Facebook, and YouTube with compelling content, reels, and brand stories.</p>
+                </div>
+                <div class="service-card premium-glass">
+                    <div class="service-icon">
+                        <img src="images/SubMenu (Service 3).png" alt="Website and LP Development Icon" class="service-icon-img">
+                    </div>
+                    <h3>Website and LP Development</h3>
+                    <p>Custom websites and conversion-focused landing pages designed to increase user engagement and lead capture.</p>
+                </div>
+                <div class="service-card premium-glass">
+                    <div class="service-icon">
+                        <img src="images/SubMenu (Service 4).png" alt="Graphic Designing & Video Editing Icon" class="service-icon-img">
+                    </div>
+                    <h3>Graphic Designing & Video Editing</h3>
+                    <p>we offer professional graphic designing and video editing services in Mumbai to boost your brand visibility and engagement.</p>
+                </div>
+                <div class="service-card premium-glass">
+                    <div class="service-icon">
+                        <img src="images/SubMenu (Service 5).png" alt="UI/UX Designing Icon" class="service-icon-img">
+                    </div>
+                    <h3>UI/UX Designing</h3>
+                    <p>Streamline your development pipeline with CI/CD automation and infrastructure as code practices.</p>
+                </div>
+                <div class="service-card premium-glass">
+                    <div class="service-icon">
+                        <img src="images/SubMenu (Service 6).png" alt="Quality Assurance & Testing Icon" class="service-icon-img">
+                    </div>
+                    <h3>Quality Assurance & Testing</h3>
+                    <p>Ensure flawless software delivery with comprehensive testing strategies and quality assurance processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work/Clients -->
+    <section class="technology work-clients-section" id="work-clients">
+        <div class="container">
+            <div class="section-header">
+                <h2>Work/Clients</h2>
+                <p>Trusted by Leading Brands Across Industries</p>
+            </div>
+            <!-- Desktop/Tablet: grid -->
+            <div class="client-grid client-grid-desktop">
+                <div class="client-logo">
+                    <img src="Client Logos/JP Infra (8).png" alt="JP Infra (via CPA Firm)">
+                    <div class="client-caption">By CP Firm</div>
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Shrishti.png" alt="Shrishti Namaah">
+                    <div class="client-caption">By CP Firm</div>
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Vihang.png" alt="Vihang Luxuria">
+                    <div class="client-caption">By CP Firm</div>
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Alchemy Charu School.png" alt="Alchemy Charu School">
+                    <div class="client-placeholder">Alchemy Charu School</div>
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Shiv Shakti.png" alt="Shiv Shakti">
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Kalpataru (6).png" alt="Kalpataru Borivali">
+                    <div class="client-caption">By CP Firm</div>
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Sportives.png" alt="Sportives">
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Accuworks.png" alt="Accuworks Engineers">
+                    <div class="client-placeholder">Ackowork Engineers</div>
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Kanhaji Masale.png" alt="Kanhaji Masala">
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/nergy.webp" alt="Nergy Protein">
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/Rejoice International School.png" alt="Rejoice International School">
+                </div>
+                <div class="client-logo">
+                    <img src="Client Logos/MM Mithaiwala.png" alt="MM Mithaiwala">
+                    <div class="client-caption">Personal Project</div>
+                </div>
+            </div>
+            <!-- Mobile: 3 horizontal carousels (content duplication for seamless infinite loop) -->
+            <div class="client-carousels-mobile" aria-hidden="true">
+                <div class="client-carousel-row">
+                    <div class="client-carousel-track">
+                        <div class="client-carousel-slide">
+                            <div class="client-logo"><img src="Client Logos/JP Infra (8).png" alt="JP Infra"><div class="client-caption">By CP Firm</div></div>
+                            <div class="client-logo"><img src="Client Logos/Shrishti.png" alt="Shrishti Namaah"><div class="client-caption">By CP Firm</div></div>
+                            <div class="client-logo"><img src="Client Logos/Vihang.png" alt="Vihang Luxuria"><div class="client-caption">By CP Firm</div></div>
+                            <div class="client-logo"><img src="Client Logos/Alchemy Charu School.png" alt="Alchemy Charu School"></div>
+                        </div>
+                        <div class="client-carousel-slide" aria-hidden="true">
+                            <div class="client-logo"><img src="Client Logos/JP Infra (8).png" alt="JP Infra"><div class="client-caption">By CP Firm</div></div>
+                            <div class="client-logo"><img src="Client Logos/Shrishti.png" alt="Shrishti Namaah"><div class="client-caption">By CP Firm</div></div>
+                            <div class="client-logo"><img src="Client Logos/Vihang.png" alt="Vihang Luxuria"><div class="client-caption">By CP Firm</div></div>
+                            <div class="client-logo"><img src="Client Logos/Alchemy Charu School.png" alt="Alchemy Charu School"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-carousel-row">
+                    <div class="client-carousel-track">
+                        <div class="client-carousel-slide">
+                            <div class="client-logo"><img src="Client Logos/Shiv Shakti.png" alt="Shiv Shakti Reality"></div>
+                            <div class="client-logo"><img src="Client Logos/Kalpataru (6).png" alt="Kalpataru Borivali"><div class="client-caption">By CP Firm</div></div>
+                            <div class="client-logo"><img src="Client Logos/Sportives.png" alt="Sportives"></div>
+                            <div class="client-logo"><img src="Client Logos/Accuworks.png" alt="Accuworks"></div>
+                        </div>
+                        <div class="client-carousel-slide" aria-hidden="true">
+                            <div class="client-logo"><img src="Client Logos/Shiv Shakti.png" alt="Shiv Shakti Reality"></div>
+                            <div class="client-logo"><img src="Client Logos/Kalpataru (6).png" alt="Kalpataru Borivali"><div class="client-caption">By CP Firm</div></div>
+                            <div class="client-logo"><img src="Client Logos/Sportives.png" alt="Sportives"></div>
+                            <div class="client-logo"><img src="Client Logos/Accuworks.png" alt="Accuworks"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-carousel-row">
+                    <div class="client-carousel-track">
+                        <div class="client-carousel-slide">
+                            <div class="client-logo"><img src="Client Logos/Kanhaji Masale.png" alt="Kanhaji Masala"></div>
+                            <div class="client-logo"><img src="Client Logos/nergy.webp" alt="Nergy Protein"></div>
+                            <div class="client-logo"><img src="Client Logos/Rejoice International School.png" alt="Rejoice International School"></div>
+                            <div class="client-logo"><img src="Client Logos/MM Mithaiwala.png" alt="MM Mithaiwala"><div class="client-caption">Personal Project</div></div>
+                        </div>
+                        <div class="client-carousel-slide" aria-hidden="true">
+                            <div class="client-logo"><img src="Client Logos/Kanhaji Masale.png.png" alt="Kanhaji Masala"></div>
+                            <div class="client-logo"><img src="Client Logos/nergy.webp" alt="Nergy Protein"></div>
+                            <div class="client-logo"><img src="Client Logos/Rejoice International School.png.png" alt="Rejoice International School"></div>
+                            <div class="client-logo"><img src="Client Logos/MM Mithaiwala.png" alt="MM Mithaiwala"><div class="client-caption">Personal Project</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Models Section -->
+    <section class="engagement-models" id="engagement">
+        <div class="container">
+            <div class="section-header">
+                <h2>Engagement Models</h2>
+                <p>Flexible collaboration approaches designed to fit your project requirements</p>
+            </div>
+            <div class="models-container">
+                <div class="model-block">
+                    <h3>Project Engineering</h3>
+                    <p>End-to-end project delivery with dedicated teams managing the complete software development lifecycle.</p>
+                    <ul>
+                        <li>Fixed scope and timeline</li>
+                        <li>Dedicated project manager</li>
+                        <li>Complete ownership and delivery</li>
+                        <li>Quality assurance included</li>
+                    </ul>
+                </div>
+                <div class="model-block">
+                    <h3>Managed Engineering</h3>
+                    <p>Long-term partnership with dedicated teams working as an extension of your in-house capabilities.</p>
+                    <ul>
+                        <li>Dedicated development team</li>
+                        <li>Agile methodology</li>
+                        <li>Flexible sprint planning</li>
+                        <li>Continuous collaboration</li>
+                    </ul>
+                </div>
+                <div class="model-block">
+                    <h3>Resource Augmentation</h3>
+                    <p>Scale your existing team with skilled professionals who integrate seamlessly with your workflow.</p>
+                    <ul>
+                        <li>Immediate resource availability</li>
+                        <li>Flexible engagement duration</li>
+                        <li>Direct team integration</li>
+                        <li>Cost-effective scaling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Why Choose Us Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100" data-suffix="+">0+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25" data-suffix="+">0+</div>
+                    <div class="stat-label">Software Expertise</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="4" data-suffix="+">0+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>Software Expertise</h2>
+                <p>Working with industry-leading marketing tools & technologies</p>
+            </div>
+            <div class="tech-grid">
+                <div class="client-logo">
+                    <div class="client-placeholder">Google Ads</div>
+                </div>
+                <div class="client-logo">
+                    <div class="client-placeholder">Meta Ads</div>
+                </div>
+                <div class="client-logo">
+                    <div class="client-placeholder">Custom HTML/CSS</div>
+                </div>
+                 <div class="client-logo">
+                    <div class="client-placeholder">Wordpress</div>
+                </div>
+                <div class="client-logo">
+                    <div class="client-placeholder">Figma</div>
+                </div>
+                <div class="client-logo">
+                    <div class="client-placeholder">Databases</div>
+                </div>
+                <div class="client-logo">
+                    <div class="client-placeholder">Photoshop</div>
+                </div>
+                <div class="client-logo">
+                    <div class="client-placeholder">Automation Tools</div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Case Study Preview Section -->
+    <section class="case-study" id="case-study">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us</h2>
+                <p>Driving measurable digital growth for businesses across Mumbai & India.</p>
+            </div>
+            <div class="case-study-grid">
+                <div class="case-study-card premium-glass">
+                    <div class="case-study-image">
+                        <img src="images/Performance Driven Marketing.png" alt="Performance Driven Marketing">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Performance Driven Marketing</h3>
+                        <p>We focus on ROI-based strategies that generate high-quality leads at the best CPL & CPC through data-driven Paid Media campaigns.</p>
+                        <a href="#" class="case-study-link">Explore Our Strategy →</a>
+                    </div>
+                </div>
+                <div class="case-study-card premium-glass">
+                    <div class="case-study-image">
+                        <img src="images/Industry-Focused Expertise.png" alt="Industry-Focused Expertise">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Industry-Focused Expertise</h3>
+                        <p>Specialized experience in Real Estate, Education, FMCG & Local Businesses, delivering targeted digital marketing solutions in Mumbai.</p>
+                        <a href="#" class="case-study-link">View Our Work →</a>
+                    </div>
+                </div>
+                <div class="case-study-card premium-glass">
+                    <div class="case-study-image">
+                        <img src="images/Conversion-Focused Execution.png" alt="Conversion-Focused Execution">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Conversion-Focused Execution</h3>
+                        <p>From high-converting landing pages to optimized ad creatives and seamless CRM integration, we build systems that convert traffic into revenue.</p>
+                        <a href="#" class="case-study-link">See How We Work →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Krafly</h2>
+                    <p>Krafly Media is a results-driven Digital Marketing Agency in Mumbai helping businesses grow with performance-focused strategies and measurable outcomes. We specialize in Paid Media Services, Social Media Marketing, Website & Landing Page Development, Graphic Designing, and Lead Generation in Mumbai.</p>
+                    <p>With strong expertise in Google Ads, Meta Ads (Facebook & Instagram Ads), PPC campaigns, and conversion-focused landing pages, we help brands generate high-quality leads at optimized CPC and CPL. Our approach combines data analytics, creative strategy, and automation to maximize ROI.</p>
+                    <p>As a growing digital marketing company in Mumbai, we have worked with brands across Real Estate, Education, FMCG, and Local Businesses, delivering scalable online growth solutions. From building SEO-friendly websites to managing full-scale digital campaigns, we provide complete digital marketing solutions under one roof.</p>
+                </div>
+                <div class="about-visual">
+                    <picture>
+                        <source srcset="images/About Krafly.webp" type="image/webp">
+                        <img src="images/About Krafly.webp" alt="About Krafly Visual">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want More Leads & Sales?</h2>
+                <p>Partner with Krafly Media – A Results-Driven Digital Marketing Agency in Mumbai and turn clicks into customers with high-converting ads and optimized campaigns.</p>
+                <a href="#contact" class="btn btn-primary btn-large">Call Now </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+            <div class="contact-content contact-content-single">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Gmail *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name *</label>
+                                <input type="text" id="company" name="company" required>
+                                <span class="error-message" id="companyError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group form-group-message">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <div class="form-submit-wrap">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <h3>Thank you for reaching out!</h3>
+                        <p>We've received your message and will get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="https://customer-assets.emergentagent.com/job_corporate-tech-3/artifacts/seue2ale_Krafly%20%28White%20%29.png" alt="Krafly Logo" class="footer-logo">
+                    <p>Transforming businesses through innovative technology solutions and expert engineering services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Custom Development</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Data Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4>Get In Touch</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span class="footer-contact-label">Email</span>
+                            <a href="mailto:kraflymedia@gmail.com" class="footer-contact-link">kraflymedia@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="footer-contact-label">Phone</span>
+                            <a href="tel:+919137938034" class="footer-contact-link">+91 9137938034</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Krafly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact popup modal (opens from Contact Us CTA) -->
+    <div id="contactPopup" class="contact-popup" aria-hidden="true">
+        <div class="contact-popup-overlay"></div>
+        <div class="contact-popup-box">
+            <button type="button" class="contact-popup-close" aria-label="Close">×</button>
+            <div class="contact-popup-inner">
+                <div class="contact-popup-image">
+                    <img src="images/contact-modal-image.png" alt="Let's connect - Digital marketing">
+                </div>
+                <div class="contact-popup-form-wrap">
+                    <h2 class="contact-popup-title">Let's Connect!</h2>
+                    <form id="contactPopupForm" class="contact-popup-form">
+                        <div class="contact-popup-field">
+                            <label for="popupName" class="contact-popup-label">Full Name <span class="required-asterisk" aria-hidden="true">*</span></label>
+                            <input type="text" id="popupName" name="name" placeholder="Full Name" required aria-required="true">
+                        </div>
+                        <div class="contact-popup-field contact-popup-phone-wrap">
+                            <label for="popupPhone" class="contact-popup-label">Contact Number <span class="required-asterisk" aria-hidden="true">*</span></label>
+                            <select id="popupCountryCode" class="contact-popup-country-code" name="countryCode" aria-label="Country code">
+                                <option value="+91" selected>India +91</option>
+                                <option value="+1">US +1</option>
+                                <option value="+44">UK +44</option>
+                                <option value="+971">UAE +971</option>
+                                <option value="+61">Australia +61</option>
+                                <option value="+81">Japan +81</option>
+                                <option value="+86">China +86</option>
+                                <option value="+49">Germany +49</option>
+                                <option value="+33">France +33</option>
+                                <option value="+31">Netherlands +31</option>
+                                <option value="+65">Singapore +65</option>
+                                <option value="+60">Malaysia +60</option>
+                                <option value="+92">Pakistan +92</option>
+                                <option value="+880">Bangladesh +880</option>
+                                <option value="+94">Sri Lanka +94</option>
+                                <option value="+977">Nepal +977</option>
+                                <option value="+966">Saudi Arabia +966</option>
+                                <option value="+27">South Africa +27</option>
+                                <option value="+55">Brazil +55</option>
+                                <option value="+52">Mexico +52</option>
+                                <option value="+7">Russia +7</option>
+                                <option value="+82">South Korea +82</option>
+                                <option value="+234">Nigeria +234</option>
+                                <option value="+20">Egypt +20</option>
+                                <option value="+972">Israel +972</option>
+                                <option value="+90">Turkey +90</option>
+                                <option value="+39">Italy +39</option>
+                                <option value="+34">Spain +34</option>
+                                <option value="+46">Sweden +46</option>
+                                <option value="+47">Norway +47</option>
+                                <option value="+45">Denmark +45</option>
+                                <option value="+358">Finland +358</option>
+                                <option value="+353">Ireland +353</option>
+                                <option value="+32">Belgium +32</option>
+                                <option value="+41">Switzerland +41</option>
+                                <option value="+43">Austria +43</option>
+                                <option value="+48">Poland +48</option>
+                                <option value="+420">Czech Republic +420</option>
+                                <option value="+36">Hungary +36</option>
+                                <option value="+30">Greece +30</option>
+                                <option value="+351">Portugal +351</option>
+                                <option value="+62">Indonesia +62</option>
+                                <option value="+84">Vietnam +84</option>
+                                <option value="+66">Thailand +66</option>
+                                <option value="+63">Philippines +63</option>
+                                <option value="+64">New Zealand +64</option>
+                                <option value="+1">Canada +1</option>
+                                <option value="+54">Argentina +54</option>
+                                <option value="+57">Colombia +57</option>
+                                <option value="+51">Peru +51</option>
+                                <option value="+56">Chile +56</option>
+                                <option value="+98">Iran +98</option>
+                                <option value="+962">Jordan +962</option>
+                                <option value="+961">Lebanon +961</option>
+                                <option value="+963">Syria +963</option>
+                                <option value="+964">Iraq +964</option>
+                                <option value="+965">Kuwait +965</option>
+                                <option value="+973">Bahrain +973</option>
+                                <option value="+974">Qatar +974</option>
+                                <option value="+968">Oman +968</option>
+                                <option value="+960">Maldives +960</option>
+                                <option value="+852">Hong Kong +852</option>
+                                <option value="+853">Macau +853</option>
+                                <option value="+886">Taiwan +886</option>
+                            </select>
+                            <input type="tel" id="popupPhone" name="phone" placeholder="Contact Number" required aria-required="true">
+                        </div>
+                        <div class="contact-popup-field">
+                            <label for="popupEmail" class="contact-popup-label">Email Id <span class="required-asterisk" aria-hidden="true">*</span></label>
+                            <input type="email" id="popupEmail" name="email" placeholder="Email Id" required aria-required="true">
+                        </div>
+                        <button type="submit" class="contact-popup-submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
