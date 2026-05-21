@@ -2108,7 +2108,8 @@ body::-webkit-scrollbar-thumb {
     color: #dc2626;
 }
 
-.contact-popup-field input {
+.contact-popup-field input,
+.contact-popup-field textarea {
     width: 100%;
     padding: 14px 16px;
     font-size: 15px;
@@ -2120,11 +2121,18 @@ body::-webkit-scrollbar-thumb {
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contact-popup-field input::placeholder {
+.contact-popup-field textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.contact-popup-field input::placeholder,
+.contact-popup-field textarea::placeholder {
     color: #94a3b8;
 }
 
-.contact-popup-field input:focus {
+.contact-popup-field input:focus,
+.contact-popup-field textarea:focus {
     outline: none;
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);

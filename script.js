@@ -159,11 +159,40 @@ document.addEventListener('click', (event) => {
     }
 }, true);
 
+// Web3Forms API Email Submission Helper
+async function sendToWeb3Forms(data) {
+    const payload = {
+        access_key: "d8be8194-34b2-47b6-a2e1-1635436331e3",
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        company: data.company,
+        message: data.message,
+        subject: data.subject || "New Inquiry from Krafly Website"
+    };
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(payload)
+        });
+        const result = await response.json();
+        return result.success;
+    } catch (error) {
+        console.error("Error sending form via Web3Forms:", error);
+        return false;
+    }
+}
+
 // Contact Form Validation and Submission
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
-if (contactForm && formSuccess) contactForm.addEventListener('submit', (e) => {
+if (contactForm && formSuccess) contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     // Clear previous errors
@@ -217,27 +246,39 @@ if (contactForm && formSuccess) contactForm.addEventListener('submit', (e) => {
         isValid = false;
     }
     
-    // If form is valid, show success message
+    // If form is valid, send to Web3Forms
     if (isValid) {
-        // Hide form and show success message
-        contactForm.style.display = 'none';
-        formSuccess.style.display = 'block';
-        
-        // Log form data (in production, this would be sent to a server)
-        console.log('Form submitted:', {
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        const success = await sendToWeb3Forms({
             name,
             phone,
             email,
             company,
-            message
+            message,
+            subject: "New Landing Page Lead - Krafly Media"
         });
-        
-        // Reset form after 3 seconds and show it again
-        setTimeout(() => {
-            contactForm.reset();
-            contactForm.style.display = 'block';
-            formSuccess.style.display = 'none';
-        }, 5000);
+
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+
+        if (success) {
+            // Hide form and show success message
+            contactForm.style.display = 'none';
+            formSuccess.style.display = 'block';
+            
+            // Reset form after 5 seconds and show it again
+            setTimeout(() => {
+                contactForm.reset();
+                contactForm.style.display = 'block';
+                formSuccess.style.display = 'none';
+            }, 5000);
+        } else {
+            alert('There was a problem sending your message. Please try again or email us directly.');
+        }
     }
 });
 
@@ -307,7 +348,7 @@ if (contactPopup) {
 }
 
 if (contactPopupForm) {
-    contactPopupForm.addEventListener('submit', function (e) {
+    contactPopupForm.addEventListener('submit', async function (e) {
         e.preventDefault();
         if (!contactPopupForm.checkValidity()) {
             contactPopupForm.reportValidity();
@@ -318,11 +359,50 @@ if (contactPopupForm) {
         var code = countryCode ? countryCode.value : '+91';
         var phone = document.getElementById('popupPhone').value.trim();
         var email = document.getElementById('popupEmail').value.trim();
-        if (name && phone && email) {
-            console.log('Popup form submitted:', { name: name, countryCode: code, phone: phone, email: email });
-            contactPopupForm.reset();
-            if (countryCode) countryCode.value = '+91';
-            closeContactPopup();
+        var company = document.getElementById('popupCompany').value.trim();
+        var message = document.getElementById('popupMessage').value.trim();
+
+        if (name && phone && email && company && message) {
+            const submitBtn = contactPopupForm.querySelector('.contact-popup-submit');
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'SENDING...';
+
+            const success = await sendToWeb3Forms({
+                name,
+                phone: `${code} ${phone}`,
+                email,
+                company,
+                message,
+                subject: "New Popup Modal Lead - Krafly Media"
+            });
+
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+
+            if (success) {
+                const popupTitle = document.getElementById('popupTitle');
+                const popupSuccess = document.getElementById('popupSuccess');
+                
+                // Hide form/header and show success screen
+                contactPopupForm.style.display = 'none';
+                if (popupTitle) popupTitle.style.display = 'none';
+                if (popupSuccess) popupSuccess.style.display = 'block';
+                
+                // Automatically close popup after 4 seconds and restore the form
+                setTimeout(() => {
+                    closeContactPopup();
+                    setTimeout(() => {
+                        contactPopupForm.reset();
+                        if (countryCode) countryCode.value = '+91';
+                        contactPopupForm.style.display = 'flex';
+                        if (popupTitle) popupTitle.style.display = 'block';
+                        if (popupSuccess) popupSuccess.style.display = 'none';
+                    }, 400);
+                }, 4000);
+            } else {
+                alert('There was a problem sending your message. Please try again or email us directly.');
+            }
         }
     });
 }

@@ -564,7 +564,7 @@
                     <img src="images/contact-modal-image.png" alt="Let's connect - Digital marketing">
                 </div>
                 <div class="contact-popup-form-wrap">
-                    <h2 class="contact-popup-title">Let's Connect!</h2>
+                    <h2 class="contact-popup-title" id="popupTitle">Let's Connect!</h2>
                     <form id="contactPopupForm" class="contact-popup-form">
                         <div class="contact-popup-field">
                             <label for="popupName" class="contact-popup-label">Full Name <span class="required-asterisk" aria-hidden="true">*</span></label>
@@ -644,8 +644,25 @@
                             <label for="popupEmail" class="contact-popup-label">Email Id <span class="required-asterisk" aria-hidden="true">*</span></label>
                             <input type="email" id="popupEmail" name="email" placeholder="Email Id" required aria-required="true">
                         </div>
+                        <div class="contact-popup-field">
+                            <label for="popupCompany" class="contact-popup-label">Company Name <span class="required-asterisk" aria-hidden="true">*</span></label>
+                            <input type="text" id="popupCompany" name="company" placeholder="Company Name" required aria-required="true">
+                        </div>
+                        <div class="contact-popup-field">
+                            <label for="popupMessage" class="contact-popup-label">Message <span class="required-asterisk" aria-hidden="true">*</span></label>
+                            <textarea id="popupMessage" name="message" placeholder="Message" rows="3" required aria-required="true"></textarea>
+                        </div>
                         <button type="submit" class="contact-popup-submit">SUBMIT</button>
                     </form>
+                    <div id="popupSuccess" class="contact-popup-success" style="display: none; text-align: center; padding: 40px 10px;">
+                        <div style="width: 64px; height: 64px; background: #ecfdf5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: #059669; margin-bottom: 12px;">Thank You!</h3>
+                        <p style="font-size: 15px; color: #475569; line-height: 1.6;">We've received your inquiry and will get back to you within 24 hours.</p>
+                    </div>
                 </div>
             </div>
         </div>
